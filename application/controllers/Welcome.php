@@ -20,6 +20,7 @@ class Welcome extends CI_Controller {
 	{
 		$persona['nombre'] = $this->input-> post('nombre');
 		$persona['apellido'] = $this->input-> post('apellido');
+		$persona['dpi'] = $this->input-> post('dpi');
 		$persona['direccion'] = $this->input-> post('direccion');
 		$persona['movil'] = $this->input-> post('movil');
 		$persona['email'] = $this->input-> post('email');
@@ -36,6 +37,7 @@ class Welcome extends CI_Controller {
 	public function editar($id_persona) {
 		$persona['nombre'] = $this->input->post('nombre');
 		$persona['apellido'] = $this->input->post('apellido');
+		$persona['dpi'] = $this->input-> post('dpi');
 		$persona['direccion'] = $this->input->post('direccion');
 		$persona['movil'] = $this->input->post('movil');
 		$persona['email'] = $this->input->post('email');
